@@ -1,13 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
-import { applyPolyfills, defineCustomElements } from '@nclemen/seven-core/loader';
 
-
-
-applyPolyfills().then(() => {
-    defineCustomElements();
-});
 const FeatureList = [
   {
     title: 'Easy to Use',

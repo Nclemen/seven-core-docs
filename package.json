@@ -20,6 +20,8 @@
     "@mdx-js/react": "^1.6.22",
     "@nclemen/seven-core": "^0.0.31",
     "clsx": "^1.1.1",
+    "mdx-mermaid": "^1.2.2",
+    "mermaid": "^8.11.5",
     "prism-react-renderer": "^1.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"

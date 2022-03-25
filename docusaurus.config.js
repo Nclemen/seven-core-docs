@@ -15,21 +15,6 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'https://github.com/', // Usually your GitHub org/user name.
   projectName: 'seven core', // Usually your repo name.
-  // themes: [
-  //   // ... Your other themes.
-  //   [
-  //     require.resolve("@easyops-cn/docusaurus-search-local"),
-  //     {
-  //       // ... Your options.
-  //       // `hashed` is recommended as long-term-cache of index file is possible.
-  //       hashed: true,
-  //       // For Docs using Chinese, The `language` is recommended to set to:
-  //       // ```
-  //       // language: ["en", "zh"],
-  //       // ```
-  //     },
-  //   ],
-  // ],
 
   plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
   presets: [
@@ -41,6 +26,7 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/Nclemen/seven-core',
+          remarkPlugins: [require('mdx-mermaid')],
         },
         blog: {
           showReadingTime: true,

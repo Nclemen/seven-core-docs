@@ -5,6 +5,13 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import { applyPolyfills, defineCustomElements } from '@nclemen/seven-core/loader';
+
+
+
+applyPolyfills().then(() => {
+    defineCustomElements();
+});
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();

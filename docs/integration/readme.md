@@ -1,9 +1,8 @@
 ---
 id: integration-section
 title: integration section
+keywords: ["integration","implementation","installation"]
 ---
-
-# Integration section
 
 ## welcome to the integration section
 
