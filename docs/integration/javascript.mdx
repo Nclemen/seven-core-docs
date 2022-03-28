@@ -5,14 +5,29 @@ hide_table_of_contents: true
 title: javascript integration
 ---
 
-<h3>importing</h3>
+integrating the package into a project without a javascript framework can be done in two ways.
 
-add the following line of code to the header tag:
-```jsx title="main.js"
+
+<h3>html script tag</h3>
+<p>
+by adding the following line of code to your html you'll be able to add the package to your project and use all components:
+</p>
+
+```jsx title="/index.html"
     <script
       type="module"
       src="https://unpkg.com/@nclemen/seven-core@latest/dist/seven-core/seven-core.esm.js"
     ></script>
+```
+
+<h3>Import</h3>
+<p>
+    otherwise if you want to
+</p>
+
+```js title="/index.html"
+    import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@nclemen/seven-core/loader/index.es2017.mjs';
+    defineCustomElements();
 ```
 
 <h3>Playground</h3>
@@ -25,5 +40,3 @@ add the following line of code to the header tag:
         allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
         sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
-
-<a href=""></a>
